@@ -16,4 +16,4 @@ const Button = ({children,variant = "black"}) => {
   )
 }
 
-export default Button
+export default Button;

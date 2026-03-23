@@ -35,14 +35,14 @@ const Navber = () => {
   return (
     <nav className="">
       <div
-        className="relative z-50"
+        className="relative z-150"
         onClick={() => {
           setMenuOPen(!menuopen);
         }}
       >
         {menuopen ? (
           <Button variant="yellow">
-            <X size={24}  />
+            <X size={24} />
           </Button>
         ) : (
           <Button>
@@ -52,15 +52,15 @@ const Navber = () => {
       </div>
 
       {menuopen && (
-        <div className="absolute top-0 right-0 w-full lg:w-[458px] h-screen bg-black   ">
-          
-
-
-  <span className="flex justify-end pt-[65px]  mx-8 border-b border-gray-600" />
+        <div className="absolute top-0 right-0 w-full lg:w-[458px] h-screen bg-black  z-100  ">
+          <span className="flex justify-end pt-[65px]  mx-8 border-b border-gray-600" />
 
           <ul className="flex flex-col items-center justify-between gap-8 p-8 pt-40">
             {menuItem.map((item) => (
               <li
+                onClick={() => {
+                  setMenuOPen(false);
+                }}
                 key={item.id}
                 className="border-b border-gray-500 py-3 w-full text-center uppercase"
               >
