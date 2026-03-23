@@ -1,11 +1,10 @@
-import { ArrowUpRight, TextAlignJustify, X } from 'lucide-react';
-import React, { useState } from 'react'
-import { Link } from 'react-router';
-import Button from './Button';
-
+import { ArrowUpRight, TextAlignJustify, X } from "lucide-react";
+import React, { useState } from "react";
+import { Link } from "react-router";
+import Button from "./Button";
 
 const Navber = () => {
-   const menuItem = [
+  const menuItem = [
     {
       id: 1,
       text: "HOME",
@@ -14,57 +13,72 @@ const Navber = () => {
     {
       id: 2,
       text: "About",
-      link: "/shop",
+      link: "/about",
     },
     {
       id: 3,
-      text: "Projec",
-      link: "/product",
+      text: "Project",
+      link: "/project",
     },
     {
-      id: 5,
+      id: 4,
       text: "BLOG",
       link: "/blog",
     },
-       {
-      id: 4,
+    {
+      id: 5,
       text: "content",
       link: "/content",
     },
-  ]; 
-  const [menuopen,setMenuOPen]=useState(false);
-   return (
+  ];
+  const [menuopen, setMenuOPen] = useState(false);
+  return (
     <nav className="">
-
-<div className="relative z-50" onClick={()=>{setMenuOPen(!menuopen)}}>
-  <Button> 
-
-{menuopen?
-  <X size={24} className='bg-amber-300' />:
-  <TextAlignJustify size={24}  /> 
-}
-  </Button>
-</div>
-{menuopen &&(
-
-      <div className="absolute top-0 right-0  w-[458px] h-screen bg-black ">
-        <ul className="flex flex-col items-center justify-between gap-8 p-8">
-          {menuItem.map((item) => (
-            <li key={item.id} className="border-b border-gray-500 py-3 w-full text-center">
-              <Link
-                to={item.link}
-                className="flex items-center justify-between gap-2 text-white hover:text-blue-400 transition"
-              >
-                {item.text}
-                <ArrowUpRight size={18} />
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <div
+        className="relative z-50"
+        onClick={() => {
+          setMenuOPen(!menuopen);
+        }}
+      >
+        {menuopen ? (
+          <Button variant="yellow">
+            <X size={24}  />
+            <span className="absolute bottom-0 left-0 w-[458px] h-[1px] bg-gray-600" />
+          </Button>
+        ) : (
+          <Button>
+            <TextAlignJustify size={24} />
+          </Button>
+        )}
       </div>
-)}
+
+      {menuopen && (
+        <div className="absolute top-0 right-0 w-full lg:w-[458px] h-screen bg-black   ">
+          
+
+
+  <span className="flex justify-end pt-[65px] mx-8 border-b border-gray-600" />
+
+          <ul className="flex flex-col items-center justify-between gap-8 p-8 pt-40">
+            {menuItem.map((item) => (
+              <li
+                key={item.id}
+                className="border-b border-gray-500 py-3 w-full text-center uppercase"
+              >
+                <Link
+                  to={item.link}
+                  className="flex items-center justify-between gap-2 text-white hover:text-blue-400 transition"
+                >
+                  {item.text}
+                  <ArrowUpRight size={18} />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
 
-export default Navber
+export default Navber;

@@ -4,6 +4,7 @@ const styles = {
   black: "bg-black text-white",
   white: "bg-white text-black border border-black",
   transparent: "bg-transparent text-black border border-gray-400",
+  yellow:"bg-[#FFB646] text-white"
 };
 const Button = ({children,variant = "black"}) => {
 
