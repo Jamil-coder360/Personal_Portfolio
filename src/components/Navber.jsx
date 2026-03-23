@@ -43,7 +43,6 @@ const Navber = () => {
         {menuopen ? (
           <Button variant="yellow">
             <X size={24}  />
-            <span className="absolute bottom-0 left-0 w-[458px] h-[1px] bg-gray-600" />
           </Button>
         ) : (
           <Button>
@@ -57,7 +56,7 @@ const Navber = () => {
           
 
 
-  <span className="flex justify-end pt-[65px] mx-8 border-b border-gray-600" />
+  <span className="flex justify-end pt-[65px]  mx-8 border-b border-gray-600" />
 
           <ul className="flex flex-col items-center justify-between gap-8 p-8 pt-40">
             {menuItem.map((item) => (
