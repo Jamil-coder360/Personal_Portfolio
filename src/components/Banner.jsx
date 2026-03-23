@@ -37,7 +37,7 @@ const Banner = () => {
       image: github,
       link: "https://github.com/Jamil-coder360?tab=overview&from=2026-02-01&to=2026-02-28",
     },
-  
+
   ];
   return (
     <section className="relative  bg-[#F5EDE0]  flex items-center">
