@@ -7,6 +7,7 @@ import behance from "../assets/behance.svg";
 import linkedin from "../assets/linkdin.svg";
 import discord from "../assets/discord.svg";
 import github from "../assets/github.svg";
+import Social from "./Social";
 
 const Banner = () => {
   const bgImage = {
@@ -96,37 +97,14 @@ const Banner = () => {
           </div>
 
           {/* Stats + Social */}
-          <div className="flex items-center gap-6">
-            {/* Stats */}
-            <div>
-              <span className="text-2xl font-black text-[#1a1a1a]">1.2k+</span>
-              <span className="text-sm text-[#555] ml-2">Worldwide client</span>
-            </div>
-
-            <div className="w-[1px] h-8 bg-[#ccc]" />
-
-            {/* Social Icons */}
-            <ul className="flex items-center gap-4">
-              {social.map((item) => (
-                <li key={item.id}>
-                  <Link
-                    to={item.link}
-                    className="flex items-center gap-2 text-[#1a1a1a] hover:text-blue-500 transition"
-                  >
-                    <img
-                      src={item.image}
-                      alt="icon"
-                      className="w-5 h-5 object-contain"
-                    />
-                    <ArrowUpRight size={16} />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+     <Social 
+     social={social}
+     review="1.2k+"
+     type={true}
+     title="Worldwide client"
+     />
         </div>
 
-        {/* Contact Me circular badge */}
         <div
           className="relative hidden lg:block h-screen flex items-center justify-center"
           style={bgImage}

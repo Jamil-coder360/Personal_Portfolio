@@ -8,7 +8,7 @@ const styles = {
 };
 const Button = ({children,variant = "black"}) => {
   return (
-   <button className={`${styles[variant]} flex items-center justify-between py-5 px-8 uppercase cursor-pointer text-black rounded-[8px]`} >
+   <button className={`${styles[variant]} flex items-center justify-between gap-2 py-5 px-8 uppercase cursor-pointer text-black rounded-[8px]`} >
     {children}
    </button>
   )
