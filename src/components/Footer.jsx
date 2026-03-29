@@ -43,13 +43,13 @@ const Footer = () => {
             </div>
             <Contactcard
               title="Email me"
-              value="hello@henry.com"
-              href="mailto:hello@henry.com"
+              value="jamil595@gmail.com"
+              href="mailto:jamil595@gmail.com"
             />
             <Contactcard
-              title="Email me"
-              value="hello@henry.com"
-              href="mailto:hello@henry.com"
+              title="call me"
+              value="01608141595"
+              href="tel:01608141595"
             />
           </div>
           <div>

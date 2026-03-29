@@ -6,8 +6,8 @@ import Button from '../components/Button'
 const Notfound = () => {
   return (
     <section className='py-30'>
-      <div className="container">
-        <div>
+      <div className="container mx-auto">
+        <div className=''>
           <div></div>
           <div className='text-center flex flex-col items-center gap-10'>
 
