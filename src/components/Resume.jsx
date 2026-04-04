@@ -26,7 +26,7 @@ const Resume = () => {
   return (
     <Section className="bg-[#080808]/4 py-25">
       <Container>
-        <div className="grid grid-cols-[416px_1fr] gap-10 items-center">
+        <div className="grid grid-cols-[416px_1fr] gap-33.5  justify-center">
           <div className=" grid gap-6">
             <SectionHeading
               title="All over my details find here..."
@@ -43,7 +43,7 @@ const Resume = () => {
               </Button>
             ))}
           </div>
-          <div className="text-center">{activeContent?.component}</div>
+          <div className=" w-[638px]">{activeContent?.component}</div>
         </div>
       </Container>
     </Section>
