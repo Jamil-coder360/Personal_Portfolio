@@ -65,7 +65,7 @@ const Service = () => {
             </div>
             <Link
               href="mailto:hello@henry.com"
-              className="flex flex-col justify-between p-8 rounded-2xl bg-[#0d0d0d] border border-[#1f1f1f] no-underline w-full min-h-[340px] group cursor-pointer mt-16"
+              className="flex flex-col justify-between p-8 rounded-2xl bg-[#0d0d0d] border border-[#1f1f1f] no-underline w-full min-h-[340px] group cursor-pointer mt-16 hover:-translate-y-3"
             >
               {/* Top Row */}
               <div className="flex items-start justify-end">

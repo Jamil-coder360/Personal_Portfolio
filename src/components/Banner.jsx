@@ -99,6 +99,7 @@ const Banner = () => {
           {/* Stats + Social */}
      <Social 
      social={social}
+     icon={true}
      review="1.2k+"
      type={true}
      title="Worldwide client"

@@ -27,8 +27,8 @@ const Navber = () => {
     },
     {
       id: 5,
-      text: "content",
-      link: "/content",
+      text: "Contact",
+      link: "/contact",
     },
   ];
   const [menuopen, setMenuOPen] = useState(false);

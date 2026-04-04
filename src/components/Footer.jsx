@@ -39,7 +39,7 @@ const Footer = () => {
               <h3 className="text-white text-[62px] font-bold leading-[1.3] pb-10">
                 Let’s work together
               </h3>
-              <Social social={social} title="Based in Germany" color={true} />
+              <Social icon={true} social={social} title="Based in Germany" color={true} />
             </div>
             <Contactcard
               title="Email me"

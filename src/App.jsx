@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router/dom";
 import Homepage from './pages/Homepage';
 import Mainlayout from './components/Mainlayout';
 import Notfound from './pages/Notfound';
-
+import ContactPage from './pages/ContactPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
       {
         index:true,
         element:<Homepage />
+      },
+      {
+        path: "/contact",
+        element:<ContactPage />
       },
       {
         path: "*",

@@ -7,7 +7,7 @@ import Navber from "./Navber";
 
 const Header = () => {
   return (
-    <header className="relative flex items-center justify-between ">
+    <header className="relative flex items-center justify-between  border-b border-[#080808]/40">
       <div className="pl-12 ">
         <Link to="/">
           <img src="./logo.svg" alt="logo" className="w-28" />
@@ -16,7 +16,7 @@ const Header = () => {
 
       <div className="flex justify-end gap-2">
         <span className="hidden lg:block">
-          <Button variant="transparent">
+          <Button variant="white">
             Let’s Talk
             <ArrowUpRight size={24} />
           </Button>

@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router'
 
-const Social = ({social,title,review,color,type}) => {
+const Social = ({social,title,review,color,type,icon}) => {
   return (
         <div className="flex items-center gap-6">
             <div>
@@ -19,11 +19,12 @@ const Social = ({social,title,review,color,type}) => {
                     to={item.link}
                     className={`flex items-center gap-2  hover:text-blue-500 transition ${color ? "text-white": "text-[#1a1a1a]" } ` }
                   >
-                    <img
-                      src={item.image}
-                      alt="icon"
-                      className="w-5 h-5 object-contain  "
-                    />
+                   {icon?( <img
+                     src={item.image}
+                     alt="icon"
+                     className="w-5 h-5 object-contain  "
+                   /> ):
+                    (item.image)}
                     <ArrowUpRight size={16}  />
                   </Link>
                 </li>
