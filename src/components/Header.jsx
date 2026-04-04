@@ -8,7 +8,7 @@ import Navber from "./Navber";
 const Header = () => {
   return (
     <header className="relative flex items-center justify-between ">
-      <div className="pl-12">
+      <div className="pl-12 ">
         <Link to="/">
           <img src="./logo.svg" alt="logo" className="w-28" />
         </Link>
