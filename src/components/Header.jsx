@@ -7,7 +7,7 @@ import Navber from "./Navber";
 
 const Header = () => {
   return (
-    <header className="relative flex items-center justify-between  border-b border-[#080808]/40">
+    <header className="relative  flex items-center justify-between  border-b border-[#080808]/40 sticky top-0 z-1000">
       <div className="pl-12 ">
         <Link to="/">
           <img src="./logo.svg" alt="logo" className="w-28" />
