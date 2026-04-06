@@ -44,7 +44,7 @@ const About = () => {
     },
   ];
   return (
-    <div className="">
+    <div className="w-full">
       <h3 className="text-[#080808] text-[32px] leading-[1.3] font-bold pb-6">
         Product Designer
       </h3>
@@ -59,7 +59,7 @@ const About = () => {
         </span>
       </p>
       <div className="pt-14">
-        <ul className="flex flex-col gap-3 max-w-[440px]">
+        <ul className="flex flex-col gap-3 max-w-full lg:max-w-[440px]">
           {aboutlist.map((item) => (
             <li
               key={item.id}

@@ -16,10 +16,12 @@ const Header = () => {
 
       <div className="flex justify-end gap-2">
         <span className="hidden lg:block">
+          <Link to="/contact">
           <Button variant="white">
             Let’s Talk
             <ArrowUpRight size={24} />
           </Button>
+          </Link>
         </span>
 
         <Navber />

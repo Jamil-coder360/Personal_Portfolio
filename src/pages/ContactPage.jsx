@@ -36,7 +36,7 @@ const ContactPage = () => {
   return (
     <Section className="pb-30 pt-20 ">
       <Container>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
         <div>
        <SectionHeading title="Let’s connect"  subtitle="Contact me" />
@@ -93,7 +93,10 @@ const ContactPage = () => {
               Submit <ArrowUpRight />{" "}
             </Button>
           </div>
+          <div className="w-full">
+
           <Social social={social} review="Follow me" type={true} />
+          </div>
         </div>
         </div>
       </Container>

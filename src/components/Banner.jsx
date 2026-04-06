@@ -8,6 +8,8 @@ import linkedin from "../assets/linkdin.svg";
 import discord from "../assets/discord.svg";
 import github from "../assets/github.svg";
 import Social from "./Social";
+import Section from "./Section/Section";
+import Container from "./Section/Container";
 
 const Banner = () => {
   const bgImage = {
@@ -41,9 +43,11 @@ const Banner = () => {
 
   ];
   return (
-    <section className="relative  bg-[#F5EDE0]  flex items-center">
-      <div className="grid grid-cols-2 gap-10 items-center justify-between">
-        <div className="relative z-20 px-16 ">
+    <Section className="relative  bg-[#F5EDE0]  flex items-center">
+      <Container>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-between">
+        <div className="relative z-20 ">
           {/* Greeting */}
           <div className="flex items-center gap-3 mb-4 max-w-[560px]">
             <span className="w-10 h-[2px] bg-[#1a1a1a]" />
@@ -82,9 +86,9 @@ const Banner = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-4 mb-16">
+          <div className="flex flex-col lg:flex-row items-start gap-4 mb-16">
             <Link to="/contact">
-              <Button>
+              <Button >
                 Let's Talk <ArrowUpRight size={24} />
               </Button>
             </Link>
@@ -111,7 +115,8 @@ const Banner = () => {
           style={bgImage}
         ></div>
       </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 

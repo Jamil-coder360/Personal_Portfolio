@@ -31,7 +31,7 @@ const Experince = () => {
   return (
     <div>
       <h1>Experience</h1>
-      <div className='grid grid-cols-2  gap-6 pt-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-2  gap-6 pt-10'>
         {experincelist.map((exp) => (
           <ExperienceCard
             key={exp.id}

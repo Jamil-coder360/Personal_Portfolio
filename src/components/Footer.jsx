@@ -6,8 +6,11 @@ import discord from "../assets/wdiscord.svg";
 import github from "../assets/wgithub.svg";
 import Social from "./Social";
 import { Link } from "react-router";
+import Container from "./Section/Container";
+import Section from "./Section/Section";
 
 const Footer = () => {
+  const date = new Date();
   const social = [
     {
       id: 1,
@@ -31,12 +34,14 @@ const Footer = () => {
     },
   ];
   return (
-    <section className="bg-black pb-15 pt-30">
-      <div className="container mx-auto">
+    <Section className="bg-black lg:pb-15 py-10 lg:pt-30">
+      <Container>
+
+      {/* <div className="container mx-auto"> */}
         <div className="">
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div>
-              <h3 className="text-white text-[62px] font-bold leading-[1.3] pb-10">
+              <h3 className="text-white text-[30px] lg:text-[62px] font-bold leading-[1.3] pb-10">
                 Let’s work together
               </h3>
               <Social icon={true} social={social} title="Based in Germany" color={true} />
@@ -52,9 +57,9 @@ const Footer = () => {
               href="tel:01608141595"
             />
           </div>
-          <div>
-            <h1 className="flex text-[#FFE9D9] text-center text-[220px] uppercase">
-              markhenry
+          <div className="flex text-center w-full size-full py-5">
+            <h1 className=" text-[#FFE9D9] text-center text-2xl lg:text-[115.5px] leading-[1.5]   uppercase w-full">
+              md:nahid hasan jamil
             </h1>
           </div>
           <div
@@ -68,7 +73,7 @@ const Footer = () => {
                 fontFamily: "'DM Sans', sans-serif",
               }}
             >
-              ©2023 Mark Henry, All Rights Reserved
+              © {date.getFullYear()} MD:Nahid Hasan Jamil, All Rights Reserved
             </span>
             <a
               href="#top"
@@ -82,8 +87,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      {/* </div> */}
+      </Container>
+    </Section>
   );
 };
 

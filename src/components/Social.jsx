@@ -25,7 +25,7 @@ const Social = ({social,title,review,color,type,icon}) => {
                      className="w-5 h-5 object-contain  "
                    /> ):
                     (item.image)}
-                    <ArrowUpRight size={16}  />
+                    <ArrowUpRight  className='size-4 ' />
                   </Link>
                 </li>
               ))}

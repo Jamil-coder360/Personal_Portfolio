@@ -7,7 +7,7 @@ const Homepage = () => {
     return(
         <>
         <Banner />
-        <Service />
+        {/* <Service /> */}
         <Resume />
         </>
     )
