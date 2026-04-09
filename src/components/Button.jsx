@@ -6,11 +6,11 @@ const styles = {
   transparent: "bg-transparent text-black border border-gray-400",
   yellow:"bg-[#FFB646] text-white"
 };
-const Button = ({children,variant = "black",className="",...props}) => {
+const Button = ({Tagname="button",children,variant = "black",className="",...props}) => {
   return (
-   <button className={`${styles[variant]} ${className} flex items-center justify-between gap-2 py-5 px-8 uppercase cursor-pointer  text-black rounded-[8px]`} {...props}>
+   <Tagname className={`${styles[variant]} ${className} flex items-center justify-between gap-2 py-5 px-8 uppercase cursor-pointer  text-black rounded-[8px]`} {...props}>
     {children}
-   </button>
+   </Tagname>
   )
 
 }
