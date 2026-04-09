@@ -33,3 +33,37 @@ export const blogData = [
     date: "15 July 2021",
   },
 ];
+
+
+//pricing datalist
+
+export const pricingData = [
+  {
+    id: 1,
+    type: "Basic Plan",
+    time: "1 Month",
+    title: "Starter Package",
+    subtitle: "Personal Website",
+  },
+  {
+    id: 2,
+    type: "Standard Plan",
+    time: "3 Months",
+    title: "Growth Package",
+    subtitle: "Business Website",
+  },
+  {
+    id: 3,
+    type: "Premium Plan",
+    time: "6 Months",
+    title: "Pro Package",
+    subtitle: "Full SaaS UI",
+  },
+  // {
+  //   id: 4,
+  //   type: "Enterprise Plan",
+  //   time: "1 Year",
+  //   title: "Ultimate Package",
+  //   subtitle: "Custom Web App",
+  // },
+];

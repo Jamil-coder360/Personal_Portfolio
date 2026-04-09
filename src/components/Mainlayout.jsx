@@ -5,11 +5,11 @@ import Footer from './Footer'
 
 const Mainlayout = () => {
   return (
-    <>
+    <main className="">
     <Header />
     <Outlet />
     <Footer />
-    </>
+    </main>
   )
 }
 
