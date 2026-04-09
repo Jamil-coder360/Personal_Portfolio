@@ -1,8 +1,8 @@
 import React from "react";
 
-const SectionHeading = ({ title, subtitle }) => {
+const SectionHeading = ({ title, subtitle,className="" }) => {
   return (
-    <div>
+    <div className={className}>
       <p className="text-[20px] leading-[1.4] font-bold text-[#FF9330] pb-2">
         {subtitle}
       </p>
