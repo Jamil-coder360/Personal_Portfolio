@@ -34,6 +34,7 @@ const Experince = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2  gap-6 pt-10'>
         {experincelist.map((exp) => (
           <ExperienceCard
+           type={true}
             key={exp.id}
             company={exp.company}
             title={exp.title}

@@ -24,8 +24,8 @@ const experincelist = [
     institute: "Axtra Inco.",
     title: "BA Business Management",
     date: "03/2008 – 07/2011",
-  }
-]; 
+  },
+];
 
 const Education = () => {
   return (
@@ -33,21 +33,19 @@ const Education = () => {
       <h1>Education</h1>
 
       <div className="grid grid-cols-1 gap-6 pt-10">
-  {experincelist.map((item)=>(
-    <ExperienceCard 
-    key={item.id}
-     company={item.institute}
+        {experincelist.map((item) => (
+          <ExperienceCard
+            key={item.id}
+            company={item.institute}
             title={item.title}
             date={item.date}
             type={true}
-            className="w-full"
-    />
-
-  ) )}
-  
+            className="w-full flex-row justify-between"
+          />
+        ))}
       </div>
     </div>
-  );          
+  );
 };
 
 export default Education;

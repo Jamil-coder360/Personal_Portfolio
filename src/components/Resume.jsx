@@ -32,16 +32,19 @@ const Resume = () => {
               title="All over my details find here..."
               subtitle="Resume"
             />
+            <div className="  flex flex-col gap-6">
+
             {menu.map((item) => (
               <Button
                 key={item.id}
                 onClick={() => setActive(item.id)}
-                className="w-full"
+                className="w-full h-14"
                 variant={active === item.id ? "black" : "white"}
               >
                 {item.name} <ArrowUpRight />
               </Button>
             ))}
+            </div>
           </div>
           <div className=" w-full lg:w-[638px]">{activeContent?.component}</div>
         </div>
