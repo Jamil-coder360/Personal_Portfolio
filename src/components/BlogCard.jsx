@@ -3,8 +3,8 @@ import React from "react";
 
 const BlogCard = ({ image ,title="Right-lo-left behind development in mobile web design" }) => {
   return (
-    <div className="max-w-76.5  hover:-translate-y-3.5 duration-300">
-      <div className="w-76.5 h-95">
+    <div className="max-w-full lg:max-w-76.5  hover:-translate-y-3.5 duration-300">
+      <div className="w-full lg:w-76.5 h-95">
         <img src={image} alt="image" className="rounded-2xl w-full h-full"/>
       </div>
       <div className="flex  items-center gap-3 w-51 pt-6 pb-3">

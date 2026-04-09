@@ -46,19 +46,19 @@ const serviceMenu = [
 ];
 const Service = () => {
   return (
-    <Section className="py-30">
+    <Section className="py-10 lg:py-30">
       <Container>
         <div>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-center justify-between">
             <SectionHeading title="My specialties" subtitle="Services" />
-            <p className="w-[636px] text-[#080808]/60 text-[18px] leading-[1.6] font-normal">
+            <p className="w-full lg:w-[636px] text-[#080808]/60 text-[18px] leading-[1.6] font-normal">
               Synergistically seize front-end methods of empowerment without
               extensive core competencies. Progressively repurpose alternative
               platforms{" "}
             </p>
           </div>
-          <div className="grid grid-cols-[auto_416px] gap-6">
-            <div className="grid grid-cols-3 gap-10 mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[auto_416px] gap-2 lg:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-16">
               {serviceMenu.map((service) => (
                 <ServiceCard key={service.id} service={service} />
               ))}

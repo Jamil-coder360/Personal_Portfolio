@@ -20,11 +20,11 @@ const Testimonial = () => {
         }
     ]
   return (
-   <Section className='py-30'>
+   <Section className='py-10 lg:py-30'>
     <Container>
-  <div className='grid grid-cols-[416px_auto]'>
+  <div className='grid grid-cols-1 lg:grid-cols-[416px_auto]'>
     <SectionHeading title=" Client feedback" subtitle="Testimonial" />
-    <div className='grid grid-cols-3 gap-12'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-12'>
 {
     tsetimonialData.map ((text) =>(
         <TestimonialCard key={text.id} text={text.text} />
