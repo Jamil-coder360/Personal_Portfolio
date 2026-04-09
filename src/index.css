@@ -10,15 +10,4 @@ input::selection{
     
 }
 
-@utility @import "tailwindcss";
-
-
-
-input::placeholder{
-    color: brown;
-}
-input::selection{
-    border-color: rgb(9, 9, 9);
-    
-}
 

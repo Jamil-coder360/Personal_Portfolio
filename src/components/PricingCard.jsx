@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
+
 
 const PricingCard = ({ type, time, title, subtitle }) => {
   return (
