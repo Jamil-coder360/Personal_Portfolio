@@ -6,14 +6,14 @@ import Portfolio from '../components/Portfolio'
 import Testimonial from '../components/Testimonial'
 import Blog from '../components/Blog'
 import Pricing from '../components/Pricing'
-import Aboutme from '../components/Aboutme'
+import Hello from '../components/Hello'
 
 const Homepage = () => {
     return(
         <>
         <Banner />
         <Service />
-        <Aboutme />
+        <Hello />
         <Resume />
         <Portfolio />
         <Testimonial />
