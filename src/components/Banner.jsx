@@ -93,7 +93,7 @@ const Banner = () => {
               </Button>
             </Link>
 
-            <Link to="/work">
+            <Link to="/project">
               <Button variant="transparent">
                 My Work <ArrowUpRight size={24} />
               </Button>
