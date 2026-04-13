@@ -16,7 +16,7 @@ const Card = ({ image, title = "Project Title", wide }) => {
   return (
     <div
       style={bgImage}
-      className={`relative w-full h-[380px] rounded-2xl overflow-hidden cursor-pointer group transition-transform duration-300 hover:-translate-y-1 ${
+      className={`relative w-full h-95 rounded-2xl overflow-hidden cursor-pointer group transition-transform duration-300 hover:-translate-y-1 ${
         wide ? "col-span-2" : ""
       }`}
     >
@@ -44,11 +44,11 @@ const ProjectPage = () => {
           title="My recent work"
           subtitle="Portfolio"
         />
-  <div className="flex flex-col gap-6.5">
+ <div className="flex flex-col gap-6.5">
 
         {/* Row 1 */}
-        <div className="grid grid-cols-5  gap-6 mb-3">
-          <div className="col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-5  gap-6 mb-3">
+          <div className="col-span-3 lg:col-span-2">
             <Card image={image} title="Landing Page Design" />
           </div>
           <div className="col-span-3">
@@ -57,18 +57,18 @@ const ProjectPage = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="grid grid-cols-3 gap-6 mb-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-3">
           <Card image={image} title="E-commerce UI" />
           <Card image={image} title="Portfolio Website" />
           <Card image={image} title="Mobile App Design" />
         </div>
 
         {/* Row 3 */}
-        <div className="grid grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
           <div className="col-span-3">
             <Card image={image} title="Admin Panel UI" />
           </div>
-          <div className="col-span-2">
+          <div className="col-span-3 lg:col-span-2 ">
             <Card image={image} title="Blog Platform" />
           </div>
         </div>
