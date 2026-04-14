@@ -7,6 +7,7 @@ import Notfound from './pages/Notfound';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import ProjectPage from './pages/ProjectPage';
+import ProjectSinglePage from './pages/ProjectSInglePage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/project",
         element:<ProjectPage />
+      },
+      {
+        path: "/project/single",
+        element:<ProjectSinglePage />
       },
       {
         path: "*",
