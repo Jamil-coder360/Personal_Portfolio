@@ -3,7 +3,7 @@ import Section from "../components/Section/Section";
 import Container from "../components/Section/Container";
 import SectionHeading from "../components/Section/SectionHeading";
 import image1 from "../assets/port-1.jpg";
-import medove from "../assets/image-m.png"
+import medove from "../assets/image_med.png"
 import ecomerce from "../assets/image-e.png"
 import portfolio from "../assets/image-p.png"
 import { ArrowUpRight } from "lucide-react";
