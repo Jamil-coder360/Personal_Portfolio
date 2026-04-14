@@ -10,4 +10,8 @@ input::selection{
     
 }
 
-
+@media (hover: hover) {
+  .hover:underline:hover {
+    text-decoration: underline;
+  }
+}
