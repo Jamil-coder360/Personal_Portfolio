@@ -14,7 +14,7 @@ const BlogPage = () => {
               title="My blog post"
               subtitle="Blog"
             />
-            <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 gap-y-10 items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:gap-10 lg:gap-6 gap-y-10 items-center justify-center">
             {blogPageData.map((item, index) => (
               <div
                 key={item.id}

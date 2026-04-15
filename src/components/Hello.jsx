@@ -9,7 +9,7 @@ const Hello = () => {
   return (
     <Section className="pb-10 lg:pb-30">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-[636px_auto] gap-10 lg:gap-34.5">
+        <div className="grid grid-cols-1 lg:grid-cols-[636px_auto] gap-10 lg:gap-34.5 justify-between">
           <div>
             <img src={Img} alt="image" />
           </div>
