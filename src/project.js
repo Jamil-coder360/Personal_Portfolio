@@ -1,5 +1,6 @@
 import medoveImage from "./assets/image_med.png";
-
+import typo1 from "./assets/typo1.png"
+import typo2 from "./assets/typo2.png"
 export const medoveProject = {
   id: "medove-fashion-dashboard",
   slug: "medove-fashion-dashboard",
@@ -46,8 +47,8 @@ export const medoveProject = {
     ],
 
     images: [
-      { src: "/assets/typography-1.jpg", alt: "Typography exploration 1" },
-      { src: "/assets/typography-2.jpg", alt: "Typography exploration 2" }
+      { src: typo1, alt: "Typography exploration 1" },
+      { src: typo2, alt: "Typography exploration 2" }
     ]
   },
 
@@ -101,7 +102,7 @@ export const basinikProject = {
       { label: "Inter — Body", isMono: false }
     ],
     images: [
-      { src: "/assets/basinik-typo-1.jpg", alt: "" },
+      { src: typo1, alt: "" },
       { src: "/assets/basinik-typo-2.jpg", alt: "" }
     ]
   },

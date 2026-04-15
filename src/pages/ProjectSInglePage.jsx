@@ -14,21 +14,21 @@ const ImagePlaceholder = ({ image, className = "" }) => (
   </div>
 );
 
-const FontCard = ({ label, mono = false }) => (
-  <div className="bg-stone-100 rounded-2xl p-5">
-    <div className={`text-5xl font-medium text-stone-800 leading-none ${mono ? "font-mono" : ""}`}>
-      Aa
-    </div>
-    <div className="text-[10px] uppercase tracking-widest text-stone-400 mt-2 mb-2">
-      {label}
-    </div>
-    <div className={`text-xs text-stone-500 leading-relaxed ${mono ? "font-mono" : ""}`}>
-      ABCDEFGHIJKLM<br />
-      NOPQRSTUVWXYZ<br />
-      0123456789
-    </div>
-  </div>
-);
+// const FontCard = ({ label, mono = false }) => (
+//   <div className="bg-stone-100 rounded-2xl p-5">
+//     <div className={`text-5xl font-medium text-stone-800 leading-none ${mono ? "font-mono" : ""}`}>
+//       Aa
+//     </div>
+//     <div className="text-[10px] uppercase tracking-widest text-stone-400 mt-2 mb-2">
+//       {label}
+//     </div>
+//     <div className={`text-xs text-stone-500 leading-relaxed ${mono ? "font-mono" : ""}`}>
+//       ABCDEFGHIJKLM<br />
+//       NOPQRSTUVWXYZ<br />
+//       0123456789
+//     </div>
+//   </div>
+// );
 
 const ProjectSinglePage = () => {
     const { slug } = useParams();
@@ -41,9 +41,9 @@ const ProjectSinglePage = () => {
 
   if (!project) return <h1>Project not found</h1>;
   return (
-    <Section>
+    <Section className="bg-[#FFE9D9] pt-20">
       <Container>
-        <div className="bg-[#F8F6F1] font-sans">
+        <div className="bg-[#FFE9D9] font-sans">
           {/* Header */}
           <div className="mb-10">
             <p className="text-[11px] uppercase tracking-widest text-stone-400 mb-3">
@@ -107,17 +107,17 @@ const ProjectSinglePage = () => {
               {project.typography.description}
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mb-5">
+            {/* <div className="grid grid-cols-2 gap-4 mb-5">
               {project.typography.fonts.map((font, i) => (
                 <FontCard 
                   key={i} 
                   label={font.label} 
                   mono={font.isMono} 
                 />
-              ))}
-            </div>
+              ))} */}
+            {/* </div> */}
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {project.typography.images.map((img, i) => (
                 <ImagePlaceholder 
                   key={i} 

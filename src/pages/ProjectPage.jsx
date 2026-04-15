@@ -71,8 +71,8 @@ const ProjectPage = () => {
 
         {/* Row 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-3">
-          <Card image={ecomerce}  slug="basinik-finance-app" title="E-commerce UI" href={"https://e-commerce-five-orpin-12.vercel.app"}/>
-          <Card image={portfolio} title="Portfolio Website" href={"https://personal-portfolio-tan-theta.vercel.app"} />
+          <Card image={ecomerce} slug= "oxilex-dashboard" title="E-commerce UI" href={"https://e-commerce-five-orpin-12.vercel.app"}/>
+          <Card image={portfolio} slug="basinik-finance-app" title="Portfolio Website" href={"https://personal-portfolio-tan-theta.vercel.app"} />
           <Card image={image1} title="Mobile App Design" />
         </div>
 
