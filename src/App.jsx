@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         element:<ProjectPage />
       },
       {
-        path: "/project/single",
+        path: "/project/:slug",
         element:<ProjectSinglePage />
       },
       {

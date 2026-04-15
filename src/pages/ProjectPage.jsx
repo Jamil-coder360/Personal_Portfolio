@@ -7,9 +7,12 @@ import medove from "../assets/image_med.png"
 import ecomerce from "../assets/image-e.png"
 import portfolio from "../assets/image-p.png"
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router";
+import { Link, useNavigation } from "react-router";
+import { useNavigate } from "react-router";
 
-const Card = ({ image="",href,title = "Project Title", wide }) => {
+
+const Card = ({slug, image="",href,title = "Project Title", wide }) => {
+   const navigate = useNavigate();
   const bgImage = {
     backgroundImage: `url(${image})`,
     backgroundPosition: "center",
@@ -18,7 +21,9 @@ const Card = ({ image="",href,title = "Project Title", wide }) => {
   };
 
   return (
+    //  <Link to={`/project/${slug}`}>
     <div
+     onClick={() => navigate(`/project/${slug}`)} 
       style={bgImage}
       className={`relative w-full border border-[#C4C4C4] h-95 rounded-2xl overflow-hidden cursor-pointer group transition-transform duration-300 hover:-translate-y-1 ${
         wide ? "col-span-2" : ""
@@ -39,6 +44,7 @@ const Card = ({ image="",href,title = "Project Title", wide }) => {
       </div>
         </Link>
     </div>
+        // </Link>
   );
 };
 
@@ -56,7 +62,7 @@ const ProjectPage = () => {
         {/* Row 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-5  gap-6 mb-3">
           <div className="col-span-3 lg:col-span-2">
-            <Card image={medove} title="Landing Page Design" href="https://medove-fashion-jlb5.vercel.app" />
+            <Card image={medove}   slug="medove-fashion-dashboard" title="Landing Page Design" href="https://medove-fashion-jlb5.vercel.app" />
           </div>
           <div className="col-span-3">
             <Card image={image1} title="Oxilex Dashboard Design" />
@@ -65,7 +71,7 @@ const ProjectPage = () => {
 
         {/* Row 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-3">
-          <Card image={ecomerce} title="E-commerce UI" href={"https://e-commerce-five-orpin-12.vercel.app"}/>
+          <Card image={ecomerce}  slug="basinik-finance-app" title="E-commerce UI" href={"https://e-commerce-five-orpin-12.vercel.app"}/>
           <Card image={portfolio} title="Portfolio Website" href={"https://personal-portfolio-tan-theta.vercel.app"} />
           <Card image={image1} title="Mobile App Design" />
         </div>
