@@ -24,7 +24,7 @@ const Testimonial = () => {
     <Container>
   <div className='grid grid-cols-1 lg:grid-cols-[416px_auto] items-center justify-center'>
     <SectionHeading title=" Client feedback" subtitle="Testimonial" />
-    <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 pt-10 lg:pt-0'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 pt-10 lg:pt-0 overflow-hidden'>
 {
     tsetimonialData.map ((text) =>(
         <TestimonialCard key={text.id} text={text.text} />

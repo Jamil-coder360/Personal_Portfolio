@@ -34,7 +34,7 @@ const Footer = () => {
     },
   ];
   return (
-    <Section className="bg-black lg:pb-15 py-10 lg:pt-30">
+    <footer className="bg-black lg:pb-15 py-10 lg:pt-30">
       <Container>
 
       {/* <div className="container mx-auto"> */}
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       {/* </div> */}
       </Container>
-    </Section>
+    </footer>
   );
 };
 
