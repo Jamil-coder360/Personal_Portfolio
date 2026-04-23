@@ -14,7 +14,9 @@ const TestimonialCard = ({text}) => {
           Jamil
         </strong>
       </div>
+      
     </div>
+    
   );
 };
 

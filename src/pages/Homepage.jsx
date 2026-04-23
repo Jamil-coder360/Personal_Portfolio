@@ -7,8 +7,10 @@ import Testimonial from '../components/Testimonial'
 import Blog from '../components/Blog'
 import Pricing from '../components/Pricing'
 import Hello from '../components/Hello'
+import LoadingPage from './LoadingPage'
 
 const Homepage = () => {
+
     return(
         <>
         <Banner />
